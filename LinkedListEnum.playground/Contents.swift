@@ -1,7 +1,6 @@
-import UIKit
+import Foundation
 
 enum LinkedListNode<T> {
-    
     case empty
     indirect case node(value: T, next: LinkedListNode<T>)
     
@@ -21,7 +20,6 @@ enum LinkedListNode<T> {
 }
 
 extension LinkedListNode: CustomStringConvertible {
-    
     var description: String {
         var desc = ""
         var node: LinkedListNode<T> = self
